@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            div{
+                width:100px;
+                height:100px;
+                background-color: cornflowerblue;
+                border:5px double white;
+                position:absolute;
+                -webkit-animation: mymove 5s infinite;
+                animation:mymove 5s infinite;
+            }
+            @-webkit-keyframes moves{
+                0%{top:0px;left:0px;background-color: tomato;transform:rotate(360deg);}
+                25%{top:0px;left:500px;background-color:teal;transform:scale(2);}
+                50%{top:0px;left:5000px;background-color: palevioletred;border-radius:100px;}
+                75%{top:0px;left:0px;background-color:crimson;transform: rotate(-360deg);}
+                100%{top:0px;left:0px;background-color: gold;}
+            }
+
+            @keyframes moves{
+                0%{top:0px;left:0px;background-color: tomato;transform:rotate(360deg);}
+                25%{top:0px;left:500px;background-color:teal;transform:scale(2);}
+                50%{top:0px;left:5000px;background-color: palevioletred;border-radius:100px;}
+                75%{top:0px;left:0px;background-color:crimson;transform: rotate(-360deg);}
+                100%{top:0px;left:0px;background-color: gold;}
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
